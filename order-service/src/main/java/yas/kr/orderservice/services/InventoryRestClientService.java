@@ -10,6 +10,6 @@ import yas.kr.orderservice.model.Product;
 public interface InventoryRestClientService {
     @GetMapping("/products/{id}?projection=fullProduct")
     public Product productById(@PathVariable Long id);
-    @GetMapping("/products")
+    @GetMapping("/products?projection=fullProduct")
     public PagedModel<Product> allProducts();
 }

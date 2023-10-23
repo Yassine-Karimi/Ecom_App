@@ -17,6 +17,7 @@ public class ProductItem {
     @Transient
     private Product product;
     private int quantity;
+    private double price;
     private double discount;
     @ManyToOne
     private Order order;

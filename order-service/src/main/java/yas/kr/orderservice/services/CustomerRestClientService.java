@@ -12,6 +12,6 @@ import java.util.List;
 public interface CustomerRestClientService {
     @GetMapping("/customers/{id}?projection=fullCustomer")
     public Customer customerById(@PathVariable Long id);
-    @GetMapping("/customers")
+    @GetMapping("/customers?projection=fullCustomer")
     public PagedModel<Customer> allCustomer();
 }
