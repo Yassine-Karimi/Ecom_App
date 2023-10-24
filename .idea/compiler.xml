@@ -12,6 +12,11 @@
         <module name="inventory-service" />
         <module name="customer-service" />
         <module name="gateway-service" />
+      </profile>
+      <profile name="Annotation profile for billing-service" enabled="true">
+        <sourceOutputDir name="billing-service/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="billing-service/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
         <module name="billing-service" />
       </profile>
     </annotationProcessing>
